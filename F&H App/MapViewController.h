@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  F&H App
 //
 //  Created by Osereime Akhigbe on 21/11/2017.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)resultsHistoryButton:(UIBarButtonItem *)sender;
-
+@interface MapViewController : UIViewController
 
 @end
-

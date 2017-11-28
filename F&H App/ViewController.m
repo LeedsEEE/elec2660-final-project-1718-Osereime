@@ -26,4 +26,8 @@
 }
 
 
+
+- (IBAction)resultsHistoryButton:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"showResults" sender:self];
+}
 @end

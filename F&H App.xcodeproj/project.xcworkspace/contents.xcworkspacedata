@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/OsereimeAkhigbe/Desktop/F&amp;H App/F&amp;H App/TabBarIcons">
+   </FileRef>
+   <FileRef
       location = "self:F&amp;H App.xcodeproj">
    </FileRef>
 </Workspace>
