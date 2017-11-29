@@ -7,18 +7,13 @@
 
 #import "BMITableViewController.h"
 
-@interface BMITableViewController ()
-
-@end
 
 @implementation BMITableViewController
 
-@synthesize  viewController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.viewController = [[ViewController alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -99,11 +94,5 @@
 */
 
 
-- (IBAction)BMIBackButton:(UIBarButtonItem *)sender {
-    // [self dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"Test");
-    nil;
-    [[self navigationController] popToViewController:viewController animated:YES];
-    }
 
 @end

@@ -11,7 +11,4 @@
 
 @interface BMITableViewController : UITableViewController
 
-- (IBAction)BMIBackButton:(UIBarButtonItem *)sender;
-
-@property (strong,nonatomic) ViewController *viewController;
 @end

@@ -11,6 +11,22 @@
 @interface ViewController : UIViewController
 
 - (IBAction)resultsHistoryButton:(UIBarButtonItem *)sender;
+- (IBAction)heightSlider:(UISlider *)sender;
+- (IBAction)typedHeight:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *viewHeight;
+@property (weak, nonatomic) IBOutlet UISlider *viewSliderHeightValue;
+@property (weak, nonatomic) IBOutlet UISlider *viewSliderWeightValue;
+@property (weak, nonatomic) IBOutlet UITextField *viewWeight;
+- (IBAction)weightSlider:(UISlider *)sender;
+- (IBAction)typedWeight:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *viewBMIValue;
+
+- (IBAction)buttonPressed:(UIButton *)sender;
+
+@property float HeightValue;
+@property float WeightValue;
+
+
 
 
 @end
