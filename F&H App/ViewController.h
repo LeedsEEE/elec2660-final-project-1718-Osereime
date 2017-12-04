@@ -26,6 +26,7 @@
 @property float HeightValue;
 @property float WeightValue;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *unitsSegmentControl;
 
 
 
