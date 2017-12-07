@@ -1,18 +1,18 @@
 //
-//  MapViewController.m
+//  MapHelpViewController.m
 //  F&H App
 //
-//  Created by Osereime Akhigbe on 21/11/2017.
+//  Created by Osereime Akhigbe on 06/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "MapHelpViewController.h"
 
-@interface MapViewController ()
+@interface MapHelpViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation MapHelpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +34,4 @@
 }
 */
 
-- (IBAction)HelpButton:(UIBarButtonItem *)sender {
-[self performSegueWithIdentifier:@"showHelp" sender:self];
-}
 @end

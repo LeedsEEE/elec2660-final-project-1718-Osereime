@@ -1,22 +1,25 @@
 //
-//  MapViewController.m
+//  HealthAdviceViewController.m
 //  F&H App
 //
-//  Created by Osereime Akhigbe on 21/11/2017.
+//  Created by Osereime Akhigbe on 05/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "HealthAdviceViewController.h"
 
-@interface MapViewController ()
+@interface HealthAdviceViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation HealthAdviceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.BMIClassLabel.text = self.data.BMIClassificationType;
+    self.AdviceLabel.text = self.data.Advice;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +37,4 @@
 }
 */
 
-- (IBAction)HelpButton:(UIBarButtonItem *)sender {
-[self performSegueWithIdentifier:@"showHelp" sender:self];
-}
 @end

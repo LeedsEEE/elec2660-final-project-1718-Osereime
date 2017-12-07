@@ -22,12 +22,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *viewBMIValue;
 
 - (IBAction)buttonPressed:(UIButton *)sender;
+- (IBAction)changedUnits:(UISegmentedControl *)sender;
 
 @property float HeightValue;
 @property float WeightValue;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *unitsSegmentControl;
 
+@property (weak, nonatomic) IBOutlet UILabel *labelCategory;
 
 
 @end

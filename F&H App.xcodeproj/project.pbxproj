@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DD9CB931FD6215C005EA493 /* HealthAdviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */; };
+		9DD9CB961FD622EE005EA493 /* HealthAdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB951FD622EE005EA493 /* HealthAdviceViewController.m */; };
+		9DD9CB991FD623D8005EA493 /* HealthAdviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB981FD623D8005EA493 /* HealthAdviceDataModel.m */; };
+		9DD9CB9C1FD6243A005EA493 /* HealthAdviceComponentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB9B1FD6243A005EA493 /* HealthAdviceComponentData.m */; };
+		9DD9CB9F1FD76DA9005EA493 /* MapHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */; };
 		9DDD5B141FC4793E00230883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B131FC4793E00230883 /* AppDelegate.m */; };
 		9DDD5B171FC4793F00230883 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B161FC4793F00230883 /* ViewController.m */; };
 		9DDD5B1A1FC4793F00230883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD5B181FC4793F00230883 /* Main.storyboard */; };
@@ -37,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9DD9CB911FD6215C005EA493 /* HealthAdviceTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceTableViewController.h; sourceTree = "<group>"; };
+		9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceTableViewController.m; sourceTree = "<group>"; };
+		9DD9CB941FD622EE005EA493 /* HealthAdviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceViewController.h; sourceTree = "<group>"; };
+		9DD9CB951FD622EE005EA493 /* HealthAdviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceViewController.m; sourceTree = "<group>"; };
+		9DD9CB971FD623D8005EA493 /* HealthAdviceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceDataModel.h; sourceTree = "<group>"; };
+		9DD9CB981FD623D8005EA493 /* HealthAdviceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceDataModel.m; sourceTree = "<group>"; };
+		9DD9CB9A1FD6243A005EA493 /* HealthAdviceComponentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceComponentData.h; sourceTree = "<group>"; };
+		9DD9CB9B1FD6243A005EA493 /* HealthAdviceComponentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceComponentData.m; sourceTree = "<group>"; };
+		9DD9CB9D1FD76DA9005EA493 /* MapHelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapHelpViewController.h; sourceTree = "<group>"; };
+		9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapHelpViewController.m; sourceTree = "<group>"; };
 		9DDD5B0F1FC4793E00230883 /* F&H App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F&H App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDD5B121FC4793E00230883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DDD5B131FC4793E00230883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,9 +130,19 @@
 				9DDD5B131FC4793E00230883 /* AppDelegate.m */,
 				9DDD5B151FC4793E00230883 /* ViewController.h */,
 				9DDD5B161FC4793F00230883 /* ViewController.m */,
+				9DD9CB941FD622EE005EA493 /* HealthAdviceViewController.h */,
+				9DD9CB951FD622EE005EA493 /* HealthAdviceViewController.m */,
 				9DDD5B4A1FC47D1300230883 /* FoodPlannerViewController.h */,
 				9DDD5B4B1FC47D1300230883 /* FoodPlannerViewController.m */,
 				9DDD5B181FC4793F00230883 /* Main.storyboard */,
+				9DD9CB9D1FD76DA9005EA493 /* MapHelpViewController.h */,
+				9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */,
+				9DD9CB971FD623D8005EA493 /* HealthAdviceDataModel.h */,
+				9DD9CB981FD623D8005EA493 /* HealthAdviceDataModel.m */,
+				9DD9CB9A1FD6243A005EA493 /* HealthAdviceComponentData.h */,
+				9DD9CB9B1FD6243A005EA493 /* HealthAdviceComponentData.m */,
+				9DD9CB911FD6215C005EA493 /* HealthAdviceTableViewController.h */,
+				9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */,
 				9DDD5B4D1FC47D3700230883 /* MapViewController.h */,
 				9DDD5B4E1FC47D3700230883 /* MapViewController.m */,
 				9DDD5B671FC4920400230883 /* BMITableViewController.h */,
@@ -282,12 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD9CB961FD622EE005EA493 /* HealthAdviceViewController.m in Sources */,
 				9DDD5B171FC4793F00230883 /* ViewController.m in Sources */,
 				9DDD5B4C1FC47D1300230883 /* FoodPlannerViewController.m in Sources */,
+				9DD9CB9C1FD6243A005EA493 /* HealthAdviceComponentData.m in Sources */,
 				9DDD5B4F1FC47D3700230883 /* MapViewController.m in Sources */,
+				9DD9CB931FD6215C005EA493 /* HealthAdviceTableViewController.m in Sources */,
 				9DDD5B221FC4793F00230883 /* main.m in Sources */,
 				9DDD5B681FC4920500230883 /* BMITableViewController.m in Sources */,
+				9DD9CB991FD623D8005EA493 /* HealthAdviceDataModel.m in Sources */,
 				9DDD5B141FC4793E00230883 /* AppDelegate.m in Sources */,
+				9DD9CB9F1FD76DA9005EA493 /* MapHelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +479,6 @@
 		9DDD5B3C1FC4793F00230883 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V96KCV3S7;
 				INFOPLIST_FILE = "F&H App/Info.plist";
@@ -464,7 +493,6 @@
 		9DDD5B3D1FC4793F00230883 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V96KCV3S7;
 				INFOPLIST_FILE = "F&H App/Info.plist";
