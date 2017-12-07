@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MapViewController : UIViewController
-- (IBAction)HelpButton:(UIBarButtonItem *)sender;
+
 
 @end

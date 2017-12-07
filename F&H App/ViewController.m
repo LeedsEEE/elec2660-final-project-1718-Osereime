@@ -41,6 +41,24 @@
 
 @synthesize HeightValue;
 @synthesize WeightValue;
+@synthesize bmiSavedValue,categorySaved ;
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    NSArray *newbmiSavedValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"BMI Value"];
+    NSArray *newcategorySaved = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
+    
+    bmiSavedValue = [NSMutableArray arrayWithArray:newbmiSavedValue];
+    categorySaved = [NSMutableArray arrayWithArray:newcategorySaved];
+    
+    NSLog(@"userdefault recall");
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [[NSUserDefaults standardUserDefaults] setObject:bmiSavedValue forKey:@"BMI Value"];
+    [[NSUserDefaults standardUserDefaults] setObject:categorySaved forKey:@"Category"];
+    NSLog(@"userdefault save");
+}
 
 - (IBAction)resultsHistoryButton:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"showResults" sender:self];
@@ -79,6 +97,7 @@
         float BMIValue;
      BMIValue = WeightValue/(HeightValue*HeightValue); //Using the formula for kg and meters
     self.viewBMIValue.text = [NSString stringWithFormat:@"%.2f kg/m^2", BMIValue];
+       
         if (BMIValue < 15) {
             self.labelCategory.text = [NSString stringWithFormat:@" Category: Very severely underweight" ];
         }
@@ -103,10 +122,18 @@
         else if (BMIValue > 40) {
             self.labelCategory.text = [NSString stringWithFormat:@" Category: Obese Class III (Very severely obese)" ];
         }
+        NSString *bmiString = [NSString stringWithFormat:@"%.2f", BMIValue];
+        NSString *categoryString = [NSString stringWithFormat:@"%@", self.labelCategory.text];
+        [bmiSavedValue insertObject:bmiString atIndex:bmiSavedValue.count];
+        [categorySaved insertObject:categoryString atIndex:categorySaved.count];
+        
+        NSLog(categoryString);
+        NSLog(bmiString);
 } else if(_unitsSegmentControl.selectedSegmentIndex == 1) {
     float BMIValue2;
     BMIValue2 = (WeightValue*703)/((HeightValue*12)*(HeightValue*12)); //Using the formula
     self.viewBMIValue.text = [NSString stringWithFormat:@"%.2f kg/m^2",BMIValue2];
+    
     if (BMIValue2 < 15) {
         self.labelCategory.text = [NSString stringWithFormat:@" Category: Very severely underweight" ];
     }
@@ -131,6 +158,22 @@
     else if (BMIValue2 > 40) {
         self.labelCategory.text = [NSString stringWithFormat:@" Category: Obese Class III (Very severely obese)" ];
     }
+    
+    NSString *bmiString = [NSString stringWithFormat:@"%.2f", BMIValue2];
+    NSString *categoryString = [NSString stringWithFormat:@"%@", self.labelCategory.text];
+    [bmiSavedValue insertObject:bmiString atIndex:bmiSavedValue.count];
+    [categorySaved insertObject:categoryString atIndex:categorySaved.count];
+    
+    NSLog(categoryString);
+    NSLog(bmiString);
+    
+    NSLog(@"bmi array = %i", bmiSavedValue.count);
+    
+    /*[bmiSavedValue insertObject:bmiString atIndex:bmiSavedValue.count];
+    [categorySaved insertObject:categoryString atIndex:categorySaved.count];
+    
+    NSLog(categoryString);
+    NSLog(bmiString);*/
 }
 }
 
@@ -155,4 +198,16 @@
     [self heightSlider:self.viewSliderHeightValue];
 
 }
+
+-(void)prepareForSegue: (UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showResults"]) {
+        
+        BMITableViewController *destinationViewController = [segue destinationViewController];
+        
+        destinationViewController.bmiArray = bmiSavedValue;
+        destinationViewController.categoryArray = categorySaved;
+        
+    }
+}
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BMITableViewController.h"
 
 @interface ViewController : UIViewController
 
@@ -31,6 +32,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *labelCategory;
 
+@property (strong, nonatomic) NSMutableArray *bmiSavedValue;
+@property (strong, nonatomic) NSMutableArray *categorySaved;
 
 @end
 

@@ -34,7 +34,4 @@
 }
 */
 
-- (IBAction)HelpButton:(UIBarButtonItem *)sender {
-[self performSegueWithIdentifier:@"showHelp" sender:self];
-}
 @end

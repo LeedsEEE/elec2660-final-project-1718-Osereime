@@ -9,6 +9,14 @@
 #import "ViewController.h"
 
 
-@interface BMITableViewController : UITableViewController
+@interface BMITableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong,nonatomic) NSMutableArray *bmiArray;
+
+@property (strong,nonatomic) NSMutableArray *categoryArray;
+
+@property (strong, nonatomic) NSString *bmiData;
+
+@property (strong, nonatomic) NSString *categoryData;
 
 @end

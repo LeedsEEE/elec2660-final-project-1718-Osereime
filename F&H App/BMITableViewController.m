@@ -14,7 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    NSLog(@"bmi count: %i", bmiArray.count);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -30,24 +30,35 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    NSInteger numberOfRows;
+    
+    if (section ==0) {
+        numberOfRows = bmiArray.count;
+    }
+    return numberOfRows;
 }
 
-/*
+@synthesize bmiData, categoryData, bmiArray, categoryArray;
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    if(indexPath.section == 0){
+        
+        bmiData = [bmiArray objectAtIndex:indexPath.row];
+        categoryData = [categoryArray objectAtIndex:indexPath.row];
+        
+        cell.textLabel.numberOfLines = 0;
+        cell.textLabel.text = [NSString stringWithFormat:@"BMI: %@ kg/m^2 \n%@",bmiData,categoryData];
+    }
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
