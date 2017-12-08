@@ -36,7 +36,7 @@
         HealthAdviceComponentData *uWeight = [[HealthAdviceComponentData alloc] init];
         
         uWeight.BMIClassificationType = @"Underweight";
-        uWeight.Advice = @"Drink Plenty Water";
+        uWeight.Advice = @"Being underweight could be a sign that you're not eating enough or that you may be ill. Beign underweight is not good because it could cause Nutritional deficiencies or Weakened immune system or Fertility Problems. It should be your aim to gain weight gradually until you reach a healthy weight. This can be achieved by Eating at least five portions of a variety of fruit and vegetables every day, Basing meals on potatoes, bread, rice, pasta or other starchy carbohydrates. Choose wholegrain where possible. More information can be relayed to you by your GP.";
         //https://www.shape.com/sites/shape.com/files/styles/facebook_og_image/public/story/weight-fluctuation.jpg
         uWeight.dataImage = @"HealthAdvice/weight-fluctuation.jpg";
         
