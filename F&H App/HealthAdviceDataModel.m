@@ -82,7 +82,7 @@
         HealthAdviceComponentData *o3Weight = [[HealthAdviceComponentData alloc] init];
         
         o3Weight.BMIClassificationType = @"Obese Class III (Very severely obese)";
-        o3Weight.Advice = @"Drink Plenty Water";
+        o3Weight.Advice = @"This is a very alarming condition, your endaring yourself and the others living around you. You are at risk of life-threatening conditions, cancer, stroke, heart disease, etc. This means that you are in need of urgent Medical Assistance. A GP is the best source of advice because, you would need intensice care which is offered by the Hospital. ";
         //https://i.pinimg.com/originals/9c/e7/b7/9ce7b70f198fa10f6adc9ad036084ad8.jpg
         o3Weight.dataImage = @"HealthAdvice/vobese.jpg";
         
