@@ -74,7 +74,7 @@
         HealthAdviceComponentData *o2Weight = [[HealthAdviceComponentData alloc] init];
         
         o2Weight.BMIClassificationType = @"Obese Class II (Severely obese)";
-        o2Weight.Advice = @"Drink Plenty Water";
+        o2Weight.Advice = @"This condition needs to be taken care of with GP advice. In this state you are also at risk of life-threatening conditions: cancer, stroke, heart disease, etc. The same advice is to be considered for Class I as Class II. Regular GP Visits are also recommended.";
         //https://www.gla.ac.uk/media/media_464488_en.jpg
         o2Weight.dataImage = @"HealthAdvice/obese2.jpg";
         
