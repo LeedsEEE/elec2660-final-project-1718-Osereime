@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D5D5FDB1FDA0A9F00875ECD /* StoreLocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D5FDA1FDA0A9F00875ECD /* StoreLocationAnnotation.m */; };
 		9DD9CB931FD6215C005EA493 /* HealthAdviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */; };
 		9DD9CB961FD622EE005EA493 /* HealthAdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB951FD622EE005EA493 /* HealthAdviceViewController.m */; };
 		9DD9CB991FD623D8005EA493 /* HealthAdviceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB981FD623D8005EA493 /* HealthAdviceDataModel.m */; };
 		9DD9CB9C1FD6243A005EA493 /* HealthAdviceComponentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB9B1FD6243A005EA493 /* HealthAdviceComponentData.m */; };
 		9DD9CB9F1FD76DA9005EA493 /* MapHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */; };
+		9DD9CBAE1FD95EA4005EA493 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD9CBAD1FD95EA4005EA493 /* CoreLocation.framework */; };
+		9DD9CBB01FD95ED1005EA493 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD9CBAF1FD95ED1005EA493 /* AddressBook.framework */; };
+		9DD9CBB21FD9F8F6005EA493 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD9CBB11FD9F8F5005EA493 /* LocalAuthentication.framework */; };
+		9DD9CBB41FD9F90C005EA493 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD9CBB31FD9F90C005EA493 /* MapKit.framework */; };
 		9DDD5B141FC4793E00230883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B131FC4793E00230883 /* AppDelegate.m */; };
 		9DDD5B171FC4793F00230883 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B161FC4793F00230883 /* ViewController.m */; };
 		9DDD5B1A1FC4793F00230883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD5B181FC4793F00230883 /* Main.storyboard */; };
@@ -42,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D5D5FD91FDA0A9F00875ECD /* StoreLocationAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreLocationAnnotation.h; sourceTree = "<group>"; };
+		9D5D5FDA1FDA0A9F00875ECD /* StoreLocationAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreLocationAnnotation.m; sourceTree = "<group>"; };
 		9DD9CB911FD6215C005EA493 /* HealthAdviceTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceTableViewController.h; sourceTree = "<group>"; };
 		9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceTableViewController.m; sourceTree = "<group>"; };
 		9DD9CB941FD622EE005EA493 /* HealthAdviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthAdviceViewController.h; sourceTree = "<group>"; };
@@ -52,6 +59,10 @@
 		9DD9CB9B1FD6243A005EA493 /* HealthAdviceComponentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAdviceComponentData.m; sourceTree = "<group>"; };
 		9DD9CB9D1FD76DA9005EA493 /* MapHelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapHelpViewController.h; sourceTree = "<group>"; };
 		9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapHelpViewController.m; sourceTree = "<group>"; };
+		9DD9CBAD1FD95EA4005EA493 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9DD9CBAF1FD95ED1005EA493 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9DD9CBB11FD9F8F5005EA493 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		9DD9CBB31FD9F90C005EA493 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9DDD5B0F1FC4793E00230883 /* F&H App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F&H App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDD5B121FC4793E00230883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DDD5B131FC4793E00230883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD9CBB41FD9F90C005EA493 /* MapKit.framework in Frameworks */,
+				9DD9CBB21FD9F8F6005EA493 /* LocalAuthentication.framework in Frameworks */,
+				9DD9CBB01FD95ED1005EA493 /* AddressBook.framework in Frameworks */,
+				9DD9CBAE1FD95EA4005EA493 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DD9CBAC1FD95EA2005EA493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9CBB31FD9F90C005EA493 /* MapKit.framework */,
+				9DD9CBB11FD9F8F5005EA493 /* LocalAuthentication.framework */,
+				9DD9CBAF1FD95ED1005EA493 /* AddressBook.framework */,
+				9DD9CBAD1FD95EA4005EA493 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DDD5B061FC4793E00230883 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +136,7 @@
 				9DDD5B2A1FC4793F00230883 /* F&H AppTests */,
 				9DDD5B351FC4793F00230883 /* F&H AppUITests */,
 				9DDD5B101FC4793E00230883 /* Products */,
+				9DD9CBAC1FD95EA2005EA493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +174,8 @@
 				9DD9CB921FD6215C005EA493 /* HealthAdviceTableViewController.m */,
 				9DDD5B4D1FC47D3700230883 /* MapViewController.h */,
 				9DDD5B4E1FC47D3700230883 /* MapViewController.m */,
+				9D5D5FD91FDA0A9F00875ECD /* StoreLocationAnnotation.h */,
+				9D5D5FDA1FDA0A9F00875ECD /* StoreLocationAnnotation.m */,
 				9DDD5B6A1FCCEB5D00230883 /* AppIcon */,
 				9DDD5B691FC5CCEC00230883 /* Assets.xcassets */,
 				9DDD5B621FC4840E00230883 /* TabBarIcons */,
@@ -316,6 +345,7 @@
 				9DDD5B221FC4793F00230883 /* main.m in Sources */,
 				9DDD5B681FC4920500230883 /* BMITableViewController.m in Sources */,
 				9DD9CB991FD623D8005EA493 /* HealthAdviceDataModel.m in Sources */,
+				9D5D5FDB1FDA0A9F00875ECD /* StoreLocationAnnotation.m in Sources */,
 				9DDD5B141FC4793E00230883 /* AppDelegate.m in Sources */,
 				9DD9CB9F1FD76DA9005EA493 /* MapHelpViewController.m in Sources */,
 			);

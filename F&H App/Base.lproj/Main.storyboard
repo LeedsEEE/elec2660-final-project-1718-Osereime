@@ -108,26 +108,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="giS-zD-S5n">
-                                <rect key="frame" x="-6" y="58" width="390" height="567"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="390" id="r87-lV-Wre"/>
-                                    <constraint firstAttribute="height" constant="567" id="yQN-ZC-QQw"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="64" width="375" height="510"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-Zn-Ier">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="YNV-gL-c7C">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eMe-kt-YuU">
+                                            <rect key="frame" x="16" y="7" width="190" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.88832598920000005" green="0.94855660200000003" blue="0.99031716589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="View Directions"/>
+                                            <connections>
+                                                <action selector="directionsButtonPressed:" destination="TfA-FP-jrj" eventType="touchUpInside" id="ab4-f5-hHg"/>
+                                            </connections>
+                                        </button>
+                                        <color key="tintColor" red="0.88832598920000005" green="0.94855660200000003" blue="0.99031716589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="bME-fV-Cdv">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xiz-wR-IPa">
+                                            <rect key="frame" x="206" y="7" width="153" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Save Location"/>
+                                            <connections>
+                                                <action selector="saveButtonPressed:" destination="TfA-FP-jrj" eventType="touchUpInside" id="ye3-GY-IsT"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WPz-un-56F" firstAttribute="trailing" secondItem="giS-zD-S5n" secondAttribute="trailing" constant="-9" id="E6N-Pg-ekj"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="top" secondItem="WPz-un-56F" secondAttribute="top" constant="-6" id="IFX-Ms-XHi"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="leading" secondItem="WPz-un-56F" secondAttribute="leading" constant="-6" id="SBi-t0-0gs"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="leading" secondItem="Hdf-Oa-3PC" secondAttribute="leading" constant="-6" id="Wvn-Z1-jLr"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="centerX" secondItem="Hdf-Oa-3PC" secondAttribute="centerX" constant="1.5" id="aEQ-pd-cdg"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="leading" secondItem="Hdf-Oa-3PC" secondAttribute="leading" constant="-6" id="aEc-8A-Z4z"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="top" secondItem="Hdf-Oa-3PC" secondAttribute="top" constant="58" id="piV-YG-Bu1"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="top" secondItem="Hdf-Oa-3PC" secondAttribute="top" constant="58" id="qJI-ek-dNk"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="centerX" secondItem="WPz-un-56F" secondAttribute="centerX" constant="1.5" id="tJL-w6-lKV"/>
-                            <constraint firstItem="WPz-un-56F" firstAttribute="bottom" secondItem="giS-zD-S5n" secondAttribute="bottom" constant="-7" id="ucS-Vk-z1Q"/>
-                            <constraint firstItem="giS-zD-S5n" firstAttribute="top" secondItem="WPz-un-56F" secondAttribute="top" constant="-6" id="ycd-Uo-gFy"/>
+                            <constraint firstItem="WPz-un-56F" firstAttribute="bottom" secondItem="giS-zD-S5n" secondAttribute="bottom" constant="44" id="6Zx-2Z-aIw"/>
+                            <constraint firstItem="giS-zD-S5n" firstAttribute="top" secondItem="WPz-un-56F" secondAttribute="top" id="7Dc-Aq-CzW"/>
+                            <constraint firstItem="giS-zD-S5n" firstAttribute="leading" secondItem="WPz-un-56F" secondAttribute="leading" id="BCX-1I-L7H"/>
+                            <constraint firstItem="WPz-un-56F" firstAttribute="trailing" secondItem="giS-zD-S5n" secondAttribute="trailing" id="Lr2-5s-q3g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WPz-un-56F"/>
                     </view>
@@ -135,43 +153,44 @@
                     <navigationItem key="navigationItem" id="i9r-tD-xz3">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="dtb-8c-EWL">
-                            <rect key="frame" x="96.5" y="7.5" width="182" height="29"/>
+                            <rect key="frame" x="92" y="7.5" width="191" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                                <segment title=""/>
+                                <segment title="Map"/>
+                                <segment title="Satellite"/>
+                                <segment title="Hybrid"/>
                             </segments>
-                        </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="qeV-i5-g9k">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0sJ-yh-McG">
-                                <rect key="frame" x="327" y="7" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Help"/>
-                            </button>
                             <connections>
-                                <action selector="HelpButton:" destination="TfA-FP-jrj" id="5KW-mD-SHt"/>
-                                <segue destination="gmL-fR-iaG" kind="show" id="lGc-v1-wgC"/>
+                                <action selector="mapTypeSelected:" destination="TfA-FP-jrj" eventType="valueChanged" id="unA-Mi-gIs"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="dpY-9s-NmD">
+                            <connections>
+                                <segue destination="tk7-LG-hmq" kind="show" id="Fnv-Aw-I6i"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapStoreView" destination="giS-zD-S5n" id="H4D-Nf-Hnw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0D9-6T-Swa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="1540"/>
+            <point key="canvasLocation" x="845.60000000000002" y="1539.5802098950526"/>
         </scene>
-        <!--Map Help-->
-        <scene sceneID="wBT-Cv-w8B">
+        <!--Map Help View Controller-->
+        <scene sceneID="mVb-NH-AHA">
             <objects>
-                <viewController title="Map Help" id="gmL-fR-iaG" customClass="MapHelpViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vJQ-bz-iMT">
+                <viewController id="tk7-LG-hmq" customClass="MapHelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1xA-4q-rXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Mlr-Xi-WXG"/>
+                        <viewLayoutGuide key="safeArea" id="OXH-gT-EUi"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Odz-W1-xL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkc-hR-qgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1598" y="1540"/>
         </scene>
