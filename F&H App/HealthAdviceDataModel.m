@@ -19,7 +19,7 @@
         HealthAdviceComponentData *vuWeight = [[HealthAdviceComponentData alloc] init];
         
         vuWeight.BMIClassificationType = @"Very severely underweight";
-        vuWeight.Advice = @"Drink Plenty Water";
+        vuWeight.Advice = @"You are also at risk of Anaemia, Ameorrhea, Infertility and Stigma. In this condition, regular visits to the clinic is adviced. This could be caused by a disease (possibly hereditary) and can only be cured when one has the proper assistance. You are also encouraged to eat a lot of protein, to help body building. In this condition, you are advised not to partake in rigorous activities, to shy away from possible injuruies.";
         //http://netdoctor.cdnds.net/17/10/980x490/landscape-1489165694-fruitveg.jpg
         vuWeight.dataImage = @"HealthAdvice/fruitveg.jpg.jpg";
         
