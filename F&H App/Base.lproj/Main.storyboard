@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialItalic.ttf">
+            <string>Arial-ItalicMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Health Advice-->
         <scene sceneID="Tjh-R4-Rf2">
@@ -184,23 +189,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IH-nE-QLI">
-                                <rect key="frame" x="16" y="79" width="343" height="399"/>
+                                <rect key="frame" x="16" y="79" width="343" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">This map helps users in Leeds find the nearest Food Convenience store to their location.
-All pinned stores are within a 4mile radius from the centre of the University (Parkinson’s Building)
+All pinned stores are within a 4 mile radius from the centre of the University (Parkinson’s Building)
 User should be able to use the map to navigate to the closest store to the user.
 Stores included in the map:
 -Tesco
 -Sainsbury’s
 -Morrisons
 Clicking on the Pin, would give the user a bit more information about the Store. Which aids preference, as Local Pinned Stores are generally smaller than Normal Pinned Stores.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OXH-gT-EUi" firstAttribute="bottom" secondItem="4IH-nE-QLI" secondAttribute="bottom" constant="140" id="3cg-mT-L38"/>
+                            <constraint firstItem="OXH-gT-EUi" firstAttribute="bottom" secondItem="4IH-nE-QLI" secondAttribute="bottom" constant="105" id="3cg-mT-L38"/>
                             <constraint firstItem="OXH-gT-EUi" firstAttribute="trailing" secondItem="4IH-nE-QLI" secondAttribute="trailing" constant="16" id="NX6-cL-18h"/>
                             <constraint firstItem="4IH-nE-QLI" firstAttribute="leading" secondItem="OXH-gT-EUi" secondAttribute="leading" constant="16" id="XV0-js-n0T"/>
                             <constraint firstItem="4IH-nE-QLI" firstAttribute="top" secondItem="OXH-gT-EUi" secondAttribute="top" constant="15" id="uJi-jn-TE5"/>

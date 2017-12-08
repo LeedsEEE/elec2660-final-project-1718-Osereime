@@ -20,6 +20,8 @@
         
         vuWeight.BMIClassificationType = @"Very severely underweight";
         vuWeight.Advice = @"Drink Plenty Water";
+        //http://netdoctor.cdnds.net/17/10/980x490/landscape-1489165694-fruitveg.jpg
+        vuWeight.dataImage = @"HealthAdvice/fruitveg.jpg.jpg";
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *suWeight = [[HealthAdviceComponentData alloc] init];
@@ -43,7 +45,7 @@
         HealthAdviceComponentData *nWeight = [[HealthAdviceComponentData alloc] init];
         
         nWeight.BMIClassificationType = @"Normal (healthy weight)";
-        nWeight.Advice = @"You are healthy. Keep up the good work. Here are some tips on How to remain Healthy";
+        nWeight.Advice = @"You are healthy. Keep up the good work. Here are some tips on How to remain Healthy. Ensure you keep to your balanced diet, sample levels of carbohydrates, protein, fruit and vegetables (at least five portions of per day. For fresh fruit and vegetables). Exercise Regularly (at least twice a eek) and go for medical check-ups at least once a month.";
         //http://www.apa.org/Images/healthy-habits-title-image_tcm7-217933.jpg
         nWeight.dataImage = @"HealthAdvice/healthy-habits.jpg";
         
@@ -51,7 +53,8 @@
         HealthAdviceComponentData *oWeight = [[HealthAdviceComponentData alloc] init];
         
         oWeight.BMIClassificationType = @"Overweight";
-        oWeight.Advice = @"Drink Plenty Water";
+        //https://www.nhs.uk/conditions/obesity/
+        oWeight.Advice = @"Being Overweight isn't the end of the world, there are some professional Sportsmen/women that are Overweight, but still operate at maximum efficiency. Obesity can be caused by eating excessive amounts of cheap, high-calorie food and spending a lot of time sitting down, at desks, on sofas or in cars. The best way to avoid this is planning your meals. Ensure you get the right amounts daily to function. Also go for regular medical check-ups, and be active, volunteer at a shelter, jog, do something!";
         
         //https://www.hivehealthmedia.com/wp-content/uploads/2013/04/fat-woman-pushups.jpg
         oWeight.dataImage = @"HealthAdvice/fat-woman-pushups.jpg";
