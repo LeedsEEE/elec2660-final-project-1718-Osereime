@@ -64,7 +64,8 @@
         HealthAdviceComponentData *o1Weight = [[HealthAdviceComponentData alloc] init];
         
         o1Weight.BMIClassificationType = @"Obese Class I (Moderately obese)";
-        o1Weight.Advice = @"Drink Plenty Water";
+        //https://www.nhs.uk/conditions/obesity/
+        o1Weight.Advice = @"It's very important to take steps to tackle obesity because, as well as causing obvious physical changes, it can lead to a number of serious and potentially life-threatening conditions, cancer, stroke, heart disease, etc. The best way to treat it is to join a local weight loss group, eat slowly,take up more activities and also visit a GP (at least 2 times a month) .From UK NHS";
         //http://pzimedia.com/post/tm670-2016-1467728447-727766046.jpg
         o1Weight.dataImage = @"HealthAdvice/obese1.jpg";
 
