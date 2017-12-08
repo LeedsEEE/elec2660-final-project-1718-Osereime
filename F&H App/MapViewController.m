@@ -29,10 +29,35 @@
 #define BurleyRd_Latitude 53.804428 ;
 #define BurleyRd_Longitude -1.568445;
 
+#define StPauls_Latitude 53.797975 ;
+#define StPauls_Longitude -1.551598;
+
+//Morrisons Store Locations
+
+#define MerrionCentre_Latitude 53.802274 ;
+#define MerrionCentre_Longitude -1.545054;
+
+#define HarehillsLane_Latitude 53.812893 ;
+#define HarehillsLane_Longitude -1.511770;
+
+//Sainsbury's Store Locations
+
+#define HydeParkLocal_Latitude 53.812541 ;
+#define HydeParkLocal_Longitude -1.569001;
+
+#define MerrionCentreLocal_Latitude 53.801449 ;
+#define MerrionCentreLocal_Longitude -1.544776;
+
+#define LeedsRoyalParkLocal_Latitude 53.810772 ;
+#define LeedsRoyalParkLocal_Longitude -1.570462;
+
+#define LeedsHeadrow_Latitude 53.799488 ;
+#define LeedsHeadrow_Longitude -1.542795;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.location = [[CLLocationManager alloc] init];
     
     self.mapStoreView.delegate = self;
@@ -63,6 +88,7 @@
     multipleAnnotaions.coordinate = location;
     multipleAnnotaions.title = @"Electronic & Electrical Engineering";
     multipleAnnotaions.subtitle = @"UoL";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Calculator.png"];
     [locations addObject:multipleAnnotaions];
     
     //tesco BlenheimTerrace annotation
@@ -72,6 +98,7 @@
     multipleAnnotaions.coordinate = location;
     multipleAnnotaions.title = @"Tesco Express";
     multipleAnnotaions.subtitle = @"Blenheim Terrace";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Tesco_Logo.png"];
     [locations addObject:multipleAnnotaions];
     
     //tesco CalverleySt annotation
@@ -81,6 +108,7 @@
     multipleAnnotaions.coordinate = location;
     multipleAnnotaions.title = @"Tesco Express";
     multipleAnnotaions.subtitle = @"Calverley St.";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Tesco_Logo.png"];
     [locations addObject:multipleAnnotaions];
     
     //tesco BurleyRd annotation
@@ -90,7 +118,79 @@
     multipleAnnotaions.coordinate = location;
     multipleAnnotaions.title = @"Tesco Express";
     multipleAnnotaions.subtitle = @"Burley Rd.";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Tesco_Logo.png"];
     [locations addObject:multipleAnnotaions];
+    
+    //tesco StPauls annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = StPauls_Latitude;
+    location.longitude = StPauls_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Tesco Express";
+    multipleAnnotaions.subtitle = @"St Pauls";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Tesco_Logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Morrisons' MerrionCentre annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = MerrionCentre_Latitude;
+    location.longitude = MerrionCentre_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Morrisons";
+    multipleAnnotaions.subtitle = @"Merrion Centre";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Morrisons-logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Morrisons' HarehillsLane annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = HarehillsLane_Latitude;
+    location.longitude = HarehillsLane_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Morrisons";
+    multipleAnnotaions.subtitle = @"Harehills Lane";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Morrisons-logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Sainsbury's HydeParkLocal annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = HydeParkLocal_Latitude;
+    location.longitude = HydeParkLocal_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Sainsbury's Local";
+    multipleAnnotaions.subtitle = @"Hyde Park Local";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Sainsburys_logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Sainsbury's MerrionCentreLocal annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = MerrionCentreLocal_Latitude;
+    location.longitude = MerrionCentreLocal_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Sainsbury's Local";
+    multipleAnnotaions.subtitle = @"Merrion Centre Local";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Sainsburys_logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Sainsbury's LeedsRoyalParkLocal annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = LeedsRoyalParkLocal_Latitude;
+    location.longitude = LeedsRoyalParkLocal_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Sainsbury's Local";
+    multipleAnnotaions.subtitle = @"Leeds Royal Park Local";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Sainsburys_logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
+    //Sainsbury's LeedsHeadrow annotation
+    multipleAnnotaions = [[StoreLocationAnnotation alloc] init];
+    location.latitude = LeedsHeadrow_Latitude;
+    location.longitude = LeedsHeadrow_Longitude;
+    multipleAnnotaions.coordinate = location;
+    multipleAnnotaions.title = @"Sainsbury's";
+    multipleAnnotaions.subtitle = @"Leeds Headrow";
+    multipleAnnotaions.image = [UIImage imageNamed:@"Sainsburys_logo.png"];
+    [locations addObject:multipleAnnotaions];
+    
     
     [self.mapStoreView addAnnotations:locations];
     
@@ -179,6 +279,34 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//Search Function
+//https://stackoverflow.com/questions/43681370/ios-get-latitude-and-longitue-from-address-geocode-and-google-api
+/*-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    NSLog(@"Searching %@",_searchBarMap.text);
+    
+    //searchBar.becomeFirstResponder;
+    
+    CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
+    [geoCoder geocodeAddressString:(@"%@",_searchBarMap.text) completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error == nil){
+        CLPlacemark *placemark = [placemarks objectAtIndex:0];
+        CLLocation *location = placemark.location;
+        CLLocationCoordinate2D coordinate = location.coordinate;
+        NSLog(@"Latitude %f", coordinate.latitude);
+        NSLog(@"Longitude %f", coordinate.longitude);
+        
+        }else{
+            NSLog(@"Error", error.localizedDescription);
+        }
+    }];
+        
+        
+    }
+    */
+    
+
+
 
 //https://stackoverflow.com/questions/19367847/different-button-actions-for-each-segmented-control-segment
 

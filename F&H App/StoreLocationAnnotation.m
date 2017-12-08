@@ -9,7 +9,7 @@
 #import "StoreLocationAnnotation.h"
 
 @implementation StoreLocationAnnotation
-@synthesize  coordinate,title, subtitle;
+@synthesize  coordinate,title, subtitle, image;
 
 
 @end

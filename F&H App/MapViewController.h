@@ -10,7 +10,7 @@
 #import <MapKit/Mapkit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapStoreView;
 @property (strong,nonatomic) CLLocationManager

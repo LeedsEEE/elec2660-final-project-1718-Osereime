@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import <UIKit/UIKit.h>
 
 @interface StoreLocationAnnotation : NSObject <MKAnnotation>
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic,copy) NSString *subtitle;
+@property (strong, nonatomic) UIImage *image;
 
 @end
