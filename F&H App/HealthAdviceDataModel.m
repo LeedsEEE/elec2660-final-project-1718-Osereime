@@ -37,7 +37,9 @@
         HealthAdviceComponentData *nWeight = [[HealthAdviceComponentData alloc] init];
         
         nWeight.BMIClassificationType = @"Normal (healthy weight)";
-        nWeight.Advice = @"Drink Plenty Water";
+        nWeight.Advice = @"You are healthy. Keep up the good work. Here are some tips on How to remain Healthy";
+        //http://www.apa.org/Images/healthy-habits-title-image_tcm7-217933.jpg
+        nWeight.dataImage = @"HealthAdvice/healthy-habits.jpg";
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *oWeight = [[HealthAdviceComponentData alloc] init];

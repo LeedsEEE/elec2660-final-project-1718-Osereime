@@ -19,7 +19,10 @@
     // Do any additional setup after loading the view.
     
     self.BMIClassLabel.text = self.data.BMIClassificationType;
-    self.AdviceLabel.text = self.data.Advice;
+    //self.AdviceLabel.text = self.data.Advice;
+    self.aadviceTextView.text = self.data.Advice;
+    UIImage *bmiImageSource = [UIImage imageNamed:self.data.dataImage];
+    self.bmiImage.image = bmiImageSource;
 }
 
 - (void)didReceiveMemoryWarning {

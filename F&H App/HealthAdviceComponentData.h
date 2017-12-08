@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) NSString *BMIClassificationType;
 @property (nonatomic, strong) NSString *Advice;
+//@property (nonatomic, strong) UIImage *Image;
+@property (strong,nonatomic) NSString *dataImage;
 
 @end

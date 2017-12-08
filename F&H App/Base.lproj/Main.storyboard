@@ -52,35 +52,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Classification Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqN-R2-ZLX">
-                                <rect key="frame" x="98.5" y="94" width="178" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="77.5" y="94" width="220.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFA-sb-4cC">
-                                <rect key="frame" x="161.5" y="134" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyv-x6-HWL">
+                                <rect key="frame" x="16" y="136" width="343" height="245"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-Ri-jgg">
+                                <rect key="frame" x="16" y="353" width="343" height="186"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lqN-R2-ZLX" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="30" id="2pb-Qk-rIc"/>
+                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="trailing" secondItem="uyv-x6-HWL" secondAttribute="trailing" constant="16" id="4hj-DQ-1gc"/>
+                            <constraint firstItem="uyv-x6-HWL" firstAttribute="leading" secondItem="4CJ-vj-5Jo" secondAttribute="leading" constant="16" id="5aY-dT-fAf"/>
                             <constraint firstItem="lqN-R2-ZLX" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="9bi-xZ-lTu"/>
-                            <constraint firstItem="RFA-sb-4cC" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="70" id="Oe7-kl-pSA"/>
-                            <constraint firstItem="RFA-sb-4cC" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="cDu-qW-IuH"/>
+                            <constraint firstItem="uyv-x6-HWL" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="72" id="C2Y-3b-Zai"/>
+                            <constraint firstItem="2hn-Ri-jgg" firstAttribute="leading" secondItem="4CJ-vj-5Jo" secondAttribute="leading" constant="16" id="EZ9-C0-uHF"/>
+                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="bottom" secondItem="2hn-Ri-jgg" secondAttribute="bottom" constant="79" id="NUu-8Y-GFA"/>
+                            <constraint firstItem="2hn-Ri-jgg" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="Vij-Pe-4Ll"/>
+                            <constraint firstItem="uyv-x6-HWL" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="c4z-C4-db8"/>
+                            <constraint firstItem="2hn-Ri-jgg" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="289" id="gBe-6A-2iT"/>
+                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="trailing" secondItem="2hn-Ri-jgg" secondAttribute="trailing" constant="16" id="kif-ia-NKs"/>
+                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="bottom" secondItem="uyv-x6-HWL" secondAttribute="bottom" constant="237" id="wOd-XS-tc5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4CJ-vj-5Jo"/>
                     </view>
                     <connections>
-                        <outlet property="AdviceLabel" destination="RFA-sb-4cC" id="T7D-NV-HaT"/>
                         <outlet property="BMIClassLabel" destination="lqN-R2-ZLX" id="YNa-7D-ABN"/>
+                        <outlet property="aadviceTextView" destination="uyv-x6-HWL" id="95i-bT-wxt"/>
+                        <outlet property="bmiImage" destination="2hn-Ri-jgg" id="oLe-CQ-oyl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avZ-tJ-coP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="36"/>
+            <point key="canvasLocation" x="1597.5999999999999" y="35.532233883058474"/>
         </scene>
         <!--Shop Locator-->
         <scene sceneID="eFa-t9-Wpz">
@@ -263,8 +276,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phy-Jt-cDE">
-                                <rect key="frame" x="187" y="459" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phy-Jt-cDE">
+                                <rect key="frame" x="187" y="459" width="128" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -287,10 +300,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="p4O-KW-JFo" firstAttribute="top" secondItem="sQq-a3-Ezm" secondAttribute="top" constant="195" id="09u-4S-M2X"/>
-                            <constraint firstItem="phy-Jt-cDE" firstAttribute="centerX" secondItem="sQq-a3-Ezm" secondAttribute="centerX" constant="48" id="3T8-sO-hS7"/>
+                            <constraint firstItem="phy-Jt-cDE" firstAttribute="centerX" secondItem="sQq-a3-Ezm" secondAttribute="centerX" constant="63.5" id="3T8-sO-hS7"/>
                             <constraint firstItem="UT0-a9-GdI" firstAttribute="top" secondItem="sQq-a3-Ezm" secondAttribute="top" constant="450" id="6fB-wJ-nHf"/>
                             <constraint firstItem="Fip-Tw-Aqc" firstAttribute="top" secondItem="sQq-a3-Ezm" secondAttribute="top" constant="40" id="6gc-9g-8IR"/>
-                            <constraint firstItem="sQq-a3-Ezm" firstAttribute="trailing" secondItem="phy-Jt-cDE" secondAttribute="trailing" constant="91" id="6wt-7J-pwj"/>
+                            <constraint firstItem="sQq-a3-Ezm" firstAttribute="trailing" secondItem="phy-Jt-cDE" secondAttribute="trailing" constant="60" id="6wt-7J-pwj"/>
                             <constraint firstItem="phy-Jt-cDE" firstAttribute="top" secondItem="sQq-a3-Ezm" secondAttribute="top" constant="395" id="75J-W6-3rx"/>
                             <constraint firstItem="bRE-1i-knZ" firstAttribute="centerX" secondItem="sQq-a3-Ezm" secondAttribute="centerX" id="BSQ-e6-fIZ"/>
                             <constraint firstItem="hzN-rG-shg" firstAttribute="centerX" secondItem="sQq-a3-Ezm" secondAttribute="centerX" id="Bi1-33-nsk"/>
@@ -342,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8Z-Ud-Fod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="-719"/>
+            <point key="canvasLocation" x="845.60000000000002" y="-719.19040479760122"/>
         </scene>
         <!--Table of Results-->
         <scene sceneID="f5n-qT-jc6">

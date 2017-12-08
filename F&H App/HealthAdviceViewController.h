@@ -12,8 +12,11 @@
 
 @interface HealthAdviceViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *BMIClassLabel;
-@property (weak, nonatomic) IBOutlet UILabel *AdviceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *BMIClassLabel;
+
+@property (strong, nonatomic) IBOutlet UITextView *aadviceTextView;
+
+@property (strong, nonatomic) IBOutlet UIImageView *bmiImage;
 
 
 @property (strong,nonatomic) HealthAdviceComponentData *data;
