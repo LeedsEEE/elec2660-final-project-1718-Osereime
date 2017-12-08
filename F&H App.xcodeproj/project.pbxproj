@@ -28,7 +28,6 @@
 		9DDD5B221FC4793F00230883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B211FC4793F00230883 /* main.m */; };
 		9DDD5B2C1FC4793F00230883 /* F_H_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B2B1FC4793F00230883 /* F_H_AppTests.m */; };
 		9DDD5B371FC4793F00230883 /* F_H_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B361FC4793F00230883 /* F_H_AppUITests.m */; };
-		9DDD5B4C1FC47D1300230883 /* FoodPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B4B1FC47D1300230883 /* FoodPlannerViewController.m */; };
 		9DDD5B4F1FC47D3700230883 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B4E1FC47D3700230883 /* MapViewController.m */; };
 		9DDD5B681FC4920500230883 /* BMITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5B661FC4920400230883 /* BMITableViewController.m */; };
 /* End PBXBuildFile section */
@@ -84,8 +83,6 @@
 		9DDD5B321FC4793F00230883 /* F&H AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F&H AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDD5B361FC4793F00230883 /* F_H_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F_H_AppUITests.m; sourceTree = "<group>"; };
 		9DDD5B381FC4793F00230883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DDD5B4A1FC47D1300230883 /* FoodPlannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodPlannerViewController.h; sourceTree = "<group>"; };
-		9DDD5B4B1FC47D1300230883 /* FoodPlannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodPlannerViewController.m; sourceTree = "<group>"; };
 		9DDD5B4D1FC47D3700230883 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		9DDD5B4E1FC47D3700230883 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9DDD5B621FC4840E00230883 /* TabBarIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TabBarIcons; path = "/Users/OsereimeAkhigbe/Desktop/F&H App/F&H App/TabBarIcons"; sourceTree = "<absolute>"; };
@@ -167,8 +164,6 @@
 				9DDD5B661FC4920400230883 /* BMITableViewController.m */,
 				9DD9CB941FD622EE005EA493 /* HealthAdviceViewController.h */,
 				9DD9CB951FD622EE005EA493 /* HealthAdviceViewController.m */,
-				9DDD5B4A1FC47D1300230883 /* FoodPlannerViewController.h */,
-				9DDD5B4B1FC47D1300230883 /* FoodPlannerViewController.m */,
 				9DDD5B181FC4793F00230883 /* Main.storyboard */,
 				9DD9CB9D1FD76DA9005EA493 /* MapHelpViewController.h */,
 				9DD9CB9E1FD76DA9005EA493 /* MapHelpViewController.m */,
@@ -355,7 +350,6 @@
 			files = (
 				9DD9CB961FD622EE005EA493 /* HealthAdviceViewController.m in Sources */,
 				9DDD5B171FC4793F00230883 /* ViewController.m in Sources */,
-				9DDD5B4C1FC47D1300230883 /* FoodPlannerViewController.m in Sources */,
 				9DD9CB9C1FD6243A005EA493 /* HealthAdviceComponentData.m in Sources */,
 				9DDD5B4F1FC47D3700230883 /* MapViewController.m in Sources */,
 				9DD9CB931FD6215C005EA493 /* HealthAdviceTableViewController.m in Sources */,

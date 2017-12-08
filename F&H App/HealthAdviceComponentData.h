@@ -10,9 +10,9 @@
 
 @interface HealthAdviceComponentData : NSObject
 
-@property (nonatomic, strong) NSString *BMIClassificationType;
-@property (nonatomic, strong) NSString *Advice;
+@property (nonatomic, strong) NSString *BMIClassificationType; //text to implement the BMI Type
+@property (nonatomic, strong) NSString *Advice; //text to implement the advice
 //@property (nonatomic, strong) UIImage *Image;
-@property (strong,nonatomic) NSString *dataImage;
+@property (strong,nonatomic) NSString *dataImage; //use to locate the image needed
 
 @end
