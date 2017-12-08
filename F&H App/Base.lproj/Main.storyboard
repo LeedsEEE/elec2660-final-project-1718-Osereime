@@ -182,13 +182,35 @@
                     <view key="view" contentMode="scaleToFill" id="1xA-4q-rXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IH-nE-QLI">
+                                <rect key="frame" x="16" y="79" width="343" height="399"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">This map helps users in Leeds find the nearest Food Convenience store to their location.
+All pinned stores are within a 4mile radius from the centre of the University (Parkinson’s Building)
+User should be able to use the map to navigate to the closest store to the user.
+Stores included in the map:
+-Tesco
+-Sainsbury’s
+-Morrisons
+Clicking on the Pin, would give the user a bit more information about the Store. Which aids preference, as Local Pinned Stores are generally smaller than Normal Pinned Stores.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OXH-gT-EUi" firstAttribute="bottom" secondItem="4IH-nE-QLI" secondAttribute="bottom" constant="140" id="3cg-mT-L38"/>
+                            <constraint firstItem="OXH-gT-EUi" firstAttribute="trailing" secondItem="4IH-nE-QLI" secondAttribute="trailing" constant="16" id="NX6-cL-18h"/>
+                            <constraint firstItem="4IH-nE-QLI" firstAttribute="leading" secondItem="OXH-gT-EUi" secondAttribute="leading" constant="16" id="XV0-js-n0T"/>
+                            <constraint firstItem="4IH-nE-QLI" firstAttribute="top" secondItem="OXH-gT-EUi" secondAttribute="top" constant="15" id="uJi-jn-TE5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OXH-gT-EUi"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkc-hR-qgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="958"/>
+            <point key="canvasLocation" x="1597.5999999999999" y="957.57121439280365"/>
         </scene>
         <!--Item-->
         <scene sceneID="4FD-1g-JSB">
