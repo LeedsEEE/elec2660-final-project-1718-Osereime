@@ -62,12 +62,17 @@
         
         o1Weight.BMIClassificationType = @"Obese Class I (Moderately obese)";
         o1Weight.Advice = @"Drink Plenty Water";
+        //http://pzimedia.com/post/tm670-2016-1467728447-727766046.jpg
+        o1Weight.dataImage = @"HealthAdvice/obese1.jpg";
+
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *o2Weight = [[HealthAdviceComponentData alloc] init];
         
         o2Weight.BMIClassificationType = @"Obese Class II (Severely obese)";
         o2Weight.Advice = @"Drink Plenty Water";
+        //https://www.gla.ac.uk/media/media_464488_en.jpg
+        o2Weight.dataImage = @"HealthAdvice/obese2.jpg";
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *o3Weight = [[HealthAdviceComponentData alloc] init];
