@@ -25,7 +25,10 @@
         HealthAdviceComponentData *suWeight = [[HealthAdviceComponentData alloc] init];
         
         suWeight.BMIClassificationType = @"Severely underweight";
-        suWeight.Advice = @"Drink Plenty Water";
+        //http://workoutplanner.com.au/tag/underweight/
+        suWeight.Advice = @"The best body is not a skinny body, the best body is a healthy body, there are TOO many dangers of being underweight to try to lose weight for “beauty”. Some dangers of being underweight include Anaemia, Amenorrhea, Infertility and Stigma. Take time out to visit a medical practitioner for more advice. Meal plan articles are also very adviceable to pick up.";
+        //https://i0.wp.com/workoutplanner.com.au/wp-content/uploads/2017/01/dangers-skinny-underweight-women-anemia-stress-depression.jpg?resize=800%2C400
+        suWeight.dataImage = @"HealthAdvice/-underweight-women-.jpg";
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *uWeight = [[HealthAdviceComponentData alloc] init];
@@ -49,6 +52,10 @@
         
         oWeight.BMIClassificationType = @"Overweight";
         oWeight.Advice = @"Drink Plenty Water";
+        
+        //https://www.hivehealthmedia.com/wp-content/uploads/2013/04/fat-woman-pushups.jpg
+        oWeight.dataImage = @"HealthAdvice/fat-woman-pushups.jpg";
+        
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *o1Weight = [[HealthAdviceComponentData alloc] init];
