@@ -32,6 +32,9 @@
         
         uWeight.BMIClassificationType = @"Underweight";
         uWeight.Advice = @"Drink Plenty Water";
+        //https://www.shape.com/sites/shape.com/files/styles/facebook_og_image/public/story/weight-fluctuation.jpg
+        uWeight.dataImage = @"HealthAdvice/weight-fluctuation.jpg";
+        
         
         self.BMIClassification = [NSMutableArray array];
         HealthAdviceComponentData *nWeight = [[HealthAdviceComponentData alloc] init];
@@ -64,6 +67,9 @@
         
         o3Weight.BMIClassificationType = @"Obese Class III (Very severely obese)";
         o3Weight.Advice = @"Drink Plenty Water";
+        //https://i.pinimg.com/originals/9c/e7/b7/9ce7b70f198fa10f6adc9ad036084ad8.jpg
+        o3Weight.dataImage = @"HealthAdvice/vobese.jpg";
+        
         
          [self.BMIClassification addObject:vuWeight]; //index 0
          [self.BMIClassification addObject:suWeight]; //index 1

@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-Ri-jgg">
-                                <rect key="frame" x="16" y="353" width="343" height="186"/>
+                                <rect key="frame" x="16" y="353" width="343" height="242"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +76,7 @@
                             <constraint firstItem="lqN-R2-ZLX" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="9bi-xZ-lTu"/>
                             <constraint firstItem="uyv-x6-HWL" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="72" id="C2Y-3b-Zai"/>
                             <constraint firstItem="2hn-Ri-jgg" firstAttribute="leading" secondItem="4CJ-vj-5Jo" secondAttribute="leading" constant="16" id="EZ9-C0-uHF"/>
-                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="bottom" secondItem="2hn-Ri-jgg" secondAttribute="bottom" constant="79" id="NUu-8Y-GFA"/>
+                            <constraint firstItem="4CJ-vj-5Jo" firstAttribute="bottom" secondItem="2hn-Ri-jgg" secondAttribute="bottom" constant="23" id="NUu-8Y-GFA"/>
                             <constraint firstItem="2hn-Ri-jgg" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="Vij-Pe-4Ll"/>
                             <constraint firstItem="uyv-x6-HWL" firstAttribute="centerX" secondItem="4CJ-vj-5Jo" secondAttribute="centerX" id="c4z-C4-db8"/>
                             <constraint firstItem="2hn-Ri-jgg" firstAttribute="top" secondItem="4CJ-vj-5Jo" secondAttribute="top" constant="289" id="gBe-6A-2iT"/>
